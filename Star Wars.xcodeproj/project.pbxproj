@@ -99,13 +99,9 @@
 		9F6D5DF423CE1A030084D4AE /* Star Wars */ = {
 			isa = PBXGroup;
 			children = (
-				9F6D5DF523CE1A030084D4AE /* AppDelegate.swift */,
-				9F6D5DF723CE1A030084D4AE /* SceneDelegate.swift */,
-				9F6D5DF923CE1A030084D4AE /* ViewController.swift */,
-				9F6D5DFB23CE1A030084D4AE /* Main.storyboard */,
-				9F6D5DFE23CE1A040084D4AE /* Assets.xcassets */,
-				9F6D5E0023CE1A040084D4AE /* LaunchScreen.storyboard */,
-				9F6D5E0323CE1A040084D4AE /* Info.plist */,
+				9F6D5E2823CE1A5D0084D4AE /* ViewControllers */,
+				9F6D5E2723CE1A4E0084D4AE /* Resources */,
+				9F6D5E2623CE1A440084D4AE /* Project Files */,
 			);
 			path = "Star Wars";
 			sourceTree = "<group>";
@@ -126,6 +122,42 @@
 				9F6D5E1923CE1A050084D4AE /* Info.plist */,
 			);
 			path = "Star WarsUITests";
+			sourceTree = "<group>";
+		};
+		9F6D5E2523CE1A380084D4AE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9F6D5DFB23CE1A030084D4AE /* Main.storyboard */,
+				9F6D5E0023CE1A040084D4AE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9F6D5E2623CE1A440084D4AE /* Project Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F6D5E0323CE1A040084D4AE /* Info.plist */,
+				9F6D5DF523CE1A030084D4AE /* AppDelegate.swift */,
+				9F6D5DF723CE1A030084D4AE /* SceneDelegate.swift */,
+			);
+			path = "Project Files";
+			sourceTree = "<group>";
+		};
+		9F6D5E2723CE1A4E0084D4AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F6D5DFE23CE1A040084D4AE /* Assets.xcassets */,
+				9F6D5E2523CE1A380084D4AE /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9F6D5E2823CE1A5D0084D4AE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F6D5DF923CE1A030084D4AE /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
-				INFOPLIST_FILE = "Star Wars/Info.plist";
+				INFOPLIST_FILE = "Star Wars/Project Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +486,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
-				INFOPLIST_FILE = "Star Wars/Info.plist";
+				INFOPLIST_FILE = "Star Wars/Project Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
