@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		9F6D5DF623CE1A030084D4AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D5DF523CE1A030084D4AE /* AppDelegate.swift */; };
 		9F6D5DF823CE1A030084D4AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D5DF723CE1A030084D4AE /* SceneDelegate.swift */; };
-		9F6D5DFA23CE1A030084D4AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D5DF923CE1A030084D4AE /* ViewController.swift */; };
+		9F6D5DFA23CE1A030084D4AE /* MainGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D5DF923CE1A030084D4AE /* MainGridViewController.swift */; };
 		9F6D5DFD23CE1A030084D4AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6D5DFB23CE1A030084D4AE /* Main.storyboard */; };
 		9F6D5DFF23CE1A040084D4AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6D5DFE23CE1A040084D4AE /* Assets.xcassets */; };
 		9F6D5E0223CE1A040084D4AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6D5E0023CE1A040084D4AE /* LaunchScreen.storyboard */; };
 		9F6D5E0D23CE1A050084D4AE /* Star_WarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D5E0C23CE1A050084D4AE /* Star_WarsTests.swift */; };
 		9F6D5E1823CE1A050084D4AE /* Star_WarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D5E1723CE1A050084D4AE /* Star_WarsUITests.swift */; };
+		9F6D5E2C23CEDCAE0084D4AE /* ViewModelBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D5E2B23CEDCAE0084D4AE /* ViewModelBased.swift */; };
+		9F6D5E2E23CEDCB80084D4AE /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D5E2D23CEDCB80084D4AE /* Storyboarded.swift */; };
+		9F6D5E3023CEDD0B0084D4AE /* MainGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D5E2F23CEDD0B0084D4AE /* MainGridViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 		9F6D5DF223CE1A030084D4AE /* Star Wars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star Wars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6D5DF523CE1A030084D4AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F6D5DF723CE1A030084D4AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9F6D5DF923CE1A030084D4AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F6D5DF923CE1A030084D4AE /* MainGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridViewController.swift; sourceTree = "<group>"; };
 		9F6D5DFC23CE1A030084D4AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F6D5DFE23CE1A040084D4AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F6D5E0123CE1A040084D4AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		9F6D5E1323CE1A050084D4AE /* Star WarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Star WarsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6D5E1723CE1A050084D4AE /* Star_WarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star_WarsUITests.swift; sourceTree = "<group>"; };
 		9F6D5E1923CE1A050084D4AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F6D5E2B23CEDCAE0084D4AE /* ViewModelBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBased.swift; sourceTree = "<group>"; };
+		9F6D5E2D23CEDCB80084D4AE /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		9F6D5E2F23CEDD0B0084D4AE /* MainGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		9F6D5DF423CE1A030084D4AE /* Star Wars */ = {
 			isa = PBXGroup;
 			children = (
+				9F6D5E2923CEDC940084D4AE /* Helpers */,
 				9F6D5E2823CE1A5D0084D4AE /* ViewControllers */,
 				9F6D5E2723CE1A4E0084D4AE /* Resources */,
 				9F6D5E2623CE1A440084D4AE /* Project Files */,
@@ -155,9 +162,27 @@
 		9F6D5E2823CE1A5D0084D4AE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9F6D5DF923CE1A030084D4AE /* ViewController.swift */,
+				9F6D5DF923CE1A030084D4AE /* MainGridViewController.swift */,
+				9F6D5E2F23CEDD0B0084D4AE /* MainGridViewModel.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9F6D5E2923CEDC940084D4AE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9F6D5E2A23CEDC9B0084D4AE /* Protocols */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9F6D5E2A23CEDC9B0084D4AE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9F6D5E2B23CEDCAE0084D4AE /* ViewModelBased.swift */,
+				9F6D5E2D23CEDCB80084D4AE /* Storyboarded.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,8 +316,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F6D5DFA23CE1A030084D4AE /* ViewController.swift in Sources */,
+				9F6D5DFA23CE1A030084D4AE /* MainGridViewController.swift in Sources */,
 				9F6D5DF623CE1A030084D4AE /* AppDelegate.swift in Sources */,
+				9F6D5E2E23CEDCB80084D4AE /* Storyboarded.swift in Sources */,
+				9F6D5E3023CEDD0B0084D4AE /* MainGridViewModel.swift in Sources */,
+				9F6D5E2C23CEDCAE0084D4AE /* ViewModelBased.swift in Sources */,
 				9F6D5DF823CE1A030084D4AE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
