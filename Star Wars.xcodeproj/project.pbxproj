@@ -18,6 +18,11 @@
 		9F6D5E2C23CEDCAE0084D4AE /* ViewModelBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D5E2B23CEDCAE0084D4AE /* ViewModelBased.swift */; };
 		9F6D5E2E23CEDCB80084D4AE /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D5E2D23CEDCB80084D4AE /* Storyboarded.swift */; };
 		9F6D5E3023CEDD0B0084D4AE /* MainGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D5E2F23CEDD0B0084D4AE /* MainGridViewModel.swift */; };
+		9FA7D6CD23CF231B00D73F14 /* MainGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D6CB23CF231B00D73F14 /* MainGridCell.swift */; };
+		9FA7D6CE23CF231B00D73F14 /* MainGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA7D6CC23CF231B00D73F14 /* MainGridCell.xib */; };
+		9FA7D6D123CF233500D73F14 /* MainGridCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D6D023CF233500D73F14 /* MainGridCellViewModel.swift */; };
+		9FA7D6D423CF248800D73F14 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D6D323CF248800D73F14 /* UICollectionView+Extension.swift */; };
+		9FA7D6D723CF4AE400D73F14 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D6D623CF4AE400D73F14 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		9F6D5E2B23CEDCAE0084D4AE /* ViewModelBased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBased.swift; sourceTree = "<group>"; };
 		9F6D5E2D23CEDCB80084D4AE /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		9F6D5E2F23CEDD0B0084D4AE /* MainGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridViewModel.swift; sourceTree = "<group>"; };
+		9FA7D6CB23CF231B00D73F14 /* MainGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridCell.swift; sourceTree = "<group>"; };
+		9FA7D6CC23CF231B00D73F14 /* MainGridCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainGridCell.xib; sourceTree = "<group>"; };
+		9FA7D6D023CF233500D73F14 /* MainGridCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridCellViewModel.swift; sourceTree = "<group>"; };
+		9FA7D6D323CF248800D73F14 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		9FA7D6D623CF4AE400D73F14 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,8 @@
 		9F6D5DF423CE1A030084D4AE /* Star Wars */ = {
 			isa = PBXGroup;
 			children = (
+				9FA7D6D523CF4ADA00D73F14 /* Models */,
+				9FA7D6CF23CF232100D73F14 /* Cells */,
 				9F6D5E2923CEDC940084D4AE /* Helpers */,
 				9F6D5E2823CE1A5D0084D4AE /* ViewControllers */,
 				9F6D5E2723CE1A4E0084D4AE /* Resources */,
@@ -171,6 +183,7 @@
 		9F6D5E2923CEDC940084D4AE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9FA7D6D223CF247300D73F14 /* Extensions */,
 				9F6D5E2A23CEDC9B0084D4AE /* Protocols */,
 			);
 			path = Helpers;
@@ -183,6 +196,32 @@
 				9F6D5E2D23CEDCB80084D4AE /* Storyboarded.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9FA7D6CF23CF232100D73F14 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9FA7D6CB23CF231B00D73F14 /* MainGridCell.swift */,
+				9FA7D6CC23CF231B00D73F14 /* MainGridCell.xib */,
+				9FA7D6D023CF233500D73F14 /* MainGridCellViewModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9FA7D6D223CF247300D73F14 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9FA7D6D323CF248800D73F14 /* UICollectionView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9FA7D6D523CF4ADA00D73F14 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9FA7D6D623CF4AE400D73F14 /* Person.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA7D6CE23CF231B00D73F14 /* MainGridCell.xib in Resources */,
 				9F6D5E0223CE1A040084D4AE /* LaunchScreen.storyboard in Resources */,
 				9F6D5DFF23CE1A040084D4AE /* Assets.xcassets in Resources */,
 				9F6D5DFD23CE1A030084D4AE /* Main.storyboard in Resources */,
@@ -316,10 +356,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA7D6D723CF4AE400D73F14 /* Person.swift in Sources */,
+				9FA7D6D423CF248800D73F14 /* UICollectionView+Extension.swift in Sources */,
 				9F6D5DFA23CE1A030084D4AE /* MainGridViewController.swift in Sources */,
 				9F6D5DF623CE1A030084D4AE /* AppDelegate.swift in Sources */,
+				9FA7D6CD23CF231B00D73F14 /* MainGridCell.swift in Sources */,
 				9F6D5E2E23CEDCB80084D4AE /* Storyboarded.swift in Sources */,
 				9F6D5E3023CEDD0B0084D4AE /* MainGridViewModel.swift in Sources */,
+				9FA7D6D123CF233500D73F14 /* MainGridCellViewModel.swift in Sources */,
 				9F6D5E2C23CEDCAE0084D4AE /* ViewModelBased.swift in Sources */,
 				9F6D5DF823CE1A030084D4AE /* SceneDelegate.swift in Sources */,
 			);

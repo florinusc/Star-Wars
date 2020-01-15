@@ -1,5 +1,5 @@
 //
-//  MainGridViewModel.swift
+//  MainGridCellViewModel.swift
 //  Star Wars
 //
 //  Created by Florin Uscatu on 15/01/2020.
@@ -8,4 +8,6 @@
 
 import Foundation
 
-final class MainGridViewModel: ViewModel {}
+struct MainGridCellViewModel: Hashable {
+    let name: String
+}
