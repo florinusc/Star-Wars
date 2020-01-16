@@ -20,6 +20,7 @@ final class MainGridViewController: UIViewController, ViewModelBased {
     // MARK: - Private constants
     private let padding: CGFloat = 10.0
     private let cellsPerRow: CGFloat = 2.0
+    private let loadingViewController = LoadingViewController()
     
     // MARK: - Public variables
     var viewModel: MainGridViewModel!
@@ -52,8 +53,10 @@ final class MainGridViewController: UIViewController, ViewModelBased {
     }
     
     private func getData() {
+        add(loadingViewController)
         viewModel.getData { [weak self] (error) in
             guard let self = self else { return }
+            self.loadingViewController.remove()
             if let error = error {
                 presentAlert(for: error)
                 return

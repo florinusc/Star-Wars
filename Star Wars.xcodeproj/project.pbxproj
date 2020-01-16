@@ -34,6 +34,7 @@
 		9FA7D75B23D07DCA00D73F14 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D75A23D07DCA00D73F14 /* UIViewController+Extension.swift */; };
 		9FA7D75D23D082B700D73F14 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D75C23D082B700D73F14 /* DetailViewController.swift */; };
 		9FA7D75F23D082C100D73F14 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D75E23D082C100D73F14 /* DetailViewModel.swift */; };
+		9FA7D76123D08CDE00D73F14 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D76023D08CDE00D73F14 /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		9FA7D75A23D07DCA00D73F14 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		9FA7D75C23D082B700D73F14 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9FA7D75E23D082C100D73F14 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		9FA7D76023D08CDE00D73F14 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 				9F6D5E2F23CEDD0B0084D4AE /* MainGridViewModel.swift */,
 				9FA7D75C23D082B700D73F14 /* DetailViewController.swift */,
 				9FA7D75E23D082C100D73F14 /* DetailViewModel.swift */,
+				9FA7D76023D08CDE00D73F14 /* LoadingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				9FA7D6D123CF233500D73F14 /* MainGridCellViewModel.swift in Sources */,
 				9F6D5E2C23CEDCAE0084D4AE /* ViewModelBased.swift in Sources */,
 				9FA7D75B23D07DCA00D73F14 /* UIViewController+Extension.swift in Sources */,
+				9FA7D76123D08CDE00D73F14 /* LoadingViewController.swift in Sources */,
 				9F6D5DF823CE1A030084D4AE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
