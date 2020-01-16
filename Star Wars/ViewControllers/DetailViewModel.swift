@@ -16,6 +16,13 @@ struct DetailViewModel: ViewModel {
     
     // MARK: - Public variables
     var name: String { return person.name }
+    var heightText: String { return "\(person.height) cm" }
+    var weightText: String { return "\(person.mass) kg"}
+    var eyeColor: String { return person.eyeColor }
+    var skinColor: String { return person.skinColor }
+    var hairColor: String { return person.hairColor }
+    var birthYear: String { return person.birthYear }
+    var gender: String { return person.gender }
     
     // MARK: - Lifecycle
     init(person: Person) {
