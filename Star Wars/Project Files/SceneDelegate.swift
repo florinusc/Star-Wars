@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DataLayer
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -16,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = UINavigationController(rootViewController: MainGridViewController.getInstance(with: MainGridViewModel()))
+        window?.rootViewController = UINavigationController(rootViewController: MainGridViewController.getInstance(with: MainGridViewModel(repository: MockRepository())))
         window?.makeKeyAndVisible()
     }
 }

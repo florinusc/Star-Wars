@@ -36,9 +36,25 @@ final class MainGridViewController: UIViewController, ViewModelBased {
     // MARK: - Private functions
     private func setup() {
         title = "Star Wars"
+        setupCollectionView()
+        getData()
+    }
+    
+    private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = dataSource
         collectionView.register(MainGridCell.self)
+    }
+    
+    private func getData() {
+        viewModel.getData { [weak self] (error) in
+            guard let self = self else { return }
+            if let error = error {
+                presentAlert(for: error)
+                return
+            }
+            self.update(with: viewModel.peopleViewModels)
+        }
     }
     
     private func makeDatasource() -> UICollectionViewDiffableDataSource<Section, MainGridCellViewModel> {

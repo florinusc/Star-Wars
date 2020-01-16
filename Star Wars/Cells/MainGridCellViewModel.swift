@@ -7,7 +7,12 @@
 //
 
 import Foundation
+import DataLayer
 
 struct MainGridCellViewModel: Hashable {
     let name: String
+    
+    static func from(_ person: Person) -> MainGridCellViewModel {
+        return MainGridCellViewModel(name: person.name)
+    }
 }
