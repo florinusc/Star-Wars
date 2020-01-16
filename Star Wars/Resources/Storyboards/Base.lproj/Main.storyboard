@@ -47,5 +47,32 @@
             </objects>
             <point key="canvasLocation" x="139" y="138"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Ugf-Hm-kA5">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="LjJ-Yj-ZfF" customClass="DetailViewController" customModule="Star_Wars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UdH-uR-y0c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nG5-Dy-4K1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nG5-Dy-4K1" firstAttribute="trailing" secondItem="3Aj-Yo-UzT" secondAttribute="trailing" id="2Gp-Ur-Yij"/>
+                            <constraint firstItem="nG5-Dy-4K1" firstAttribute="top" secondItem="3Aj-Yo-UzT" secondAttribute="top" id="C5K-Sq-wF3"/>
+                            <constraint firstItem="nG5-Dy-4K1" firstAttribute="leading" secondItem="3Aj-Yo-UzT" secondAttribute="leading" id="CC6-Bi-PGF"/>
+                            <constraint firstItem="nG5-Dy-4K1" firstAttribute="bottom" secondItem="3Aj-Yo-UzT" secondAttribute="bottom" id="E3m-2o-U3U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Aj-Yo-UzT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RlU-Mz-zt3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134.7826086956522" y="138.61607142857142"/>
+        </scene>
     </scenes>
 </document>

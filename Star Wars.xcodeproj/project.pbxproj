@@ -32,6 +32,8 @@
 		9FA7D75423CF89F900D73F14 /* MockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D75323CF89F900D73F14 /* MockRepository.swift */; };
 		9FA7D75723CF8BBC00D73F14 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D75623CF8BBC00D73F14 /* CustomError.swift */; };
 		9FA7D75B23D07DCA00D73F14 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D75A23D07DCA00D73F14 /* UIViewController+Extension.swift */; };
+		9FA7D75D23D082B700D73F14 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D75C23D082B700D73F14 /* DetailViewController.swift */; };
+		9FA7D75F23D082C100D73F14 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D75E23D082C100D73F14 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,8 @@
 		9FA7D75323CF89F900D73F14 /* MockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepository.swift; sourceTree = "<group>"; };
 		9FA7D75623CF8BBC00D73F14 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		9FA7D75A23D07DCA00D73F14 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		9FA7D75C23D082B700D73F14 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9FA7D75E23D082C100D73F14 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +253,8 @@
 			children = (
 				9F6D5DF923CE1A030084D4AE /* MainGridViewController.swift */,
 				9F6D5E2F23CEDD0B0084D4AE /* MainGridViewModel.swift */,
+				9FA7D75C23D082B700D73F14 /* DetailViewController.swift */,
+				9FA7D75E23D082C100D73F14 /* DetailViewModel.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -550,12 +556,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA7D75D23D082B700D73F14 /* DetailViewController.swift in Sources */,
 				9FA7D6D423CF248800D73F14 /* UICollectionView+Extension.swift in Sources */,
 				9F6D5DFA23CE1A030084D4AE /* MainGridViewController.swift in Sources */,
 				9F6D5DF623CE1A030084D4AE /* AppDelegate.swift in Sources */,
 				9FA7D6CD23CF231B00D73F14 /* MainGridCell.swift in Sources */,
 				9F6D5E2E23CEDCB80084D4AE /* Storyboarded.swift in Sources */,
 				9F6D5E3023CEDD0B0084D4AE /* MainGridViewModel.swift in Sources */,
+				9FA7D75F23D082C100D73F14 /* DetailViewModel.swift in Sources */,
 				9FA7D6D123CF233500D73F14 /* MainGridCellViewModel.swift in Sources */,
 				9F6D5E2C23CEDCAE0084D4AE /* ViewModelBased.swift in Sources */,
 				9FA7D75B23D07DCA00D73F14 /* UIViewController+Extension.swift in Sources */,

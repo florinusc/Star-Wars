@@ -35,9 +35,14 @@ final class MainGridViewController: UIViewController, ViewModelBased {
     
     // MARK: - Private functions
     private func setup() {
-        title = "Star Wars"
+        setupNavigationBar()
         setupCollectionView()
         getData()
+    }
+    
+    private func setupNavigationBar() {
+        title = "Star Wars"
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
     }
     
     private func setupCollectionView() {
@@ -70,6 +75,14 @@ final class MainGridViewController: UIViewController, ViewModelBased {
         snapshot.appendSections(Section.allCases)
         snapshot.appendItems(cellViewModels, toSection: .main)
         dataSource.apply(snapshot, animatingDifferences: true)
+    }
+}
+
+extension MainGridViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let detailViewModel = viewModel.detailViewModel(at: indexPath.row) else { return }
+        let detailViewController = DetailViewController.getInstance(with: detailViewModel)
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
 
