@@ -58,7 +58,7 @@ final class MainGridViewController: UIViewController, ViewModelBased {
             guard let self = self else { return }
             self.loadingViewController.remove()
             if let error = error {
-                presentAlert(for: error)
+                DispatchQueue.main.async { self.presentAlert(for: error) }
                 return
             }
             self.update(with: viewModel.peopleViewModels)
