@@ -1,15 +1,15 @@
 //
-//  DataLayerTests.swift
-//  DataLayerTests
+//  CommonTests.swift
+//  CommonTests
 //
-//  Created by Florin Uscatu on 15/01/2020.
+//  Created by Florin Uscatu on 16/01/2020.
 //  Copyright © 2020 Florin Uscatu. All rights reserved.
 //
 
 import XCTest
-@testable import DataLayer
+@testable import Common
 
-class DataLayerTests: XCTestCase {
+class CommonTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
