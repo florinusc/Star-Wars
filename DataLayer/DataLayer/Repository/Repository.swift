@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol Repository {
-    func getPeople(completion handler: (Result<[Person], Error>) -> Void)
+    func getPeople(page: Int, completion handler: @escaping (Result<[Person], Error>) -> Void)
 }

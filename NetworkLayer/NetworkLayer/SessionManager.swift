@@ -9,9 +9,11 @@
 import Foundation
 import Common
 
-class SessionManager {
+public class SessionManager {
     
-    func request<T: Codable>(type _: T.Type, requestType: RequestType, completion handler: @escaping (Result<T, Error>) -> Void) {
+    public init() {}
+    
+    public func request<T: Decodable>(type _: T.Type, requestType: RequestType, completion handler: @escaping (Result<T, Error>) -> Void) {
         guard let url = requestType.url else {
             handler(Result.failure(CustomError.network))
             return
@@ -24,11 +26,13 @@ class SessionManager {
                     handler(Result.failure(CustomError.network))
                     return
             }
-            guard let decodedResponse = try? JSONDecoder().decode(T.self, from: data) else {
-                handler(Result.failure(CustomError.network))
+            do {
+                let decodedResponse = try JSONDecoder().decode(T.self, from: data)
+                handler(Result.success(decodedResponse))
+            } catch let error {
+                handler(Result.failure(error))
                 return
             }
-            handler(Result.success(decodedResponse))
         }.resume()
     }
 }

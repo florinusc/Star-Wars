@@ -28,8 +28,6 @@
 		9FA7D75D23D082B700D73F14 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D75C23D082B700D73F14 /* DetailViewController.swift */; };
 		9FA7D75F23D082C100D73F14 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D75E23D082C100D73F14 /* DetailViewModel.swift */; };
 		9FA7D76123D08CDE00D73F14 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D76023D08CDE00D73F14 /* LoadingViewController.swift */; };
-		9FA7D83923D0B12100D73F14 /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA7D7EC23D0AEDC00D73F14 /* NetworkLayer.framework */; };
-		9FA7D83A23D0B12100D73F14 /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA7D7EC23D0AEDC00D73F14 /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,7 +97,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				9F8905F623D0D224009D239F /* DataLayer.framework in Embed Frameworks */,
-				9FA7D83A23D0B12100D73F14 /* NetworkLayer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +140,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F8905F523D0D224009D239F /* DataLayer.framework in Frameworks */,
-				9FA7D83923D0B12100D73F14 /* NetworkLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

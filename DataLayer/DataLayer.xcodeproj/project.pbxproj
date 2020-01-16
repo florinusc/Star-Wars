@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		9F89063423D0D36A009D239F /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F89063323D0D36A009D239F /* Common.framework */; };
 		9F89063523D0D36A009D239F /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F89063323D0D36A009D239F /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F89063D23D0D4AA009D239F /* OnlineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89063C23D0D4AA009D239F /* OnlineRepository.swift */; };
+		9F89064523D0D4BF009D239F /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F89064423D0D4BF009D239F /* NetworkLayer.framework */; };
+		9F89064623D0D4BF009D239F /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F89064423D0D4BF009D239F /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F89064923D0D81C009D239F /* PersonResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89064823D0D81C009D239F /* PersonResource.swift */; };
+		9F89064B23D0EEBB009D239F /* PeopleListResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89064A23D0EEBB009D239F /* PeopleListResource.swift */; };
 		9FA7D80C23D0B06E00D73F14 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA7D80223D0B06E00D73F14 /* DataLayer.framework */; };
 		9FA7D81123D0B06E00D73F14 /* DataLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D81023D0B06E00D73F14 /* DataLayerTests.swift */; };
 		9FA7D81323D0B06E00D73F14 /* DataLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FA7D80523D0B06E00D73F14 /* DataLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,6 +40,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				9F89063523D0D36A009D239F /* Common.framework in Embed Frameworks */,
+				9F89064623D0D4BF009D239F /* NetworkLayer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +49,10 @@
 
 /* Begin PBXFileReference section */
 		9F89063323D0D36A009D239F /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F89063C23D0D4AA009D239F /* OnlineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineRepository.swift; sourceTree = "<group>"; };
+		9F89064423D0D4BF009D239F /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F89064823D0D81C009D239F /* PersonResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonResource.swift; sourceTree = "<group>"; };
+		9F89064A23D0EEBB009D239F /* PeopleListResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListResource.swift; sourceTree = "<group>"; };
 		9FA7D80223D0B06E00D73F14 /* DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA7D80523D0B06E00D73F14 /* DataLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataLayer.h; sourceTree = "<group>"; };
 		9FA7D80623D0B06E00D73F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F89063423D0D36A009D239F /* Common.framework in Frameworks */,
+				9F89064523D0D4BF009D239F /* NetworkLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,9 +88,19 @@
 		9F89063223D0D36A009D239F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F89064423D0D4BF009D239F /* NetworkLayer.framework */,
 				9F89063323D0D36A009D239F /* Common.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F89064723D0D810009D239F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F89064823D0D81C009D239F /* PersonResource.swift */,
+				9F89064A23D0EEBB009D239F /* PeopleListResource.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		9FA7D7F823D0B06E00D73F14 = {
@@ -104,6 +125,7 @@
 		9FA7D80423D0B06E00D73F14 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9F89064723D0D810009D239F /* Resources */,
 				9FA7D83523D0B0CC00D73F14 /* Repository */,
 				9FA7D83623D0B0D600D73F14 /* Models */,
 				9FA7D82523D0B08400D73F14 /* Framework Files */,
@@ -134,6 +156,7 @@
 			children = (
 				9FA7D82D23D0B0BA00D73F14 /* MockRepository.swift */,
 				9FA7D82C23D0B0BA00D73F14 /* Repository.swift */,
+				9F89063C23D0D4AA009D239F /* OnlineRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -257,8 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F89064B23D0EEBB009D239F /* PeopleListResource.swift in Sources */,
+				9F89064923D0D81C009D239F /* PersonResource.swift in Sources */,
 				9FA7D83223D0B0BA00D73F14 /* Person.swift in Sources */,
 				9FA7D83023D0B0BA00D73F14 /* Repository.swift in Sources */,
+				9F89063D23D0D4AA009D239F /* OnlineRepository.swift in Sources */,
 				9FA7D83123D0B0BA00D73F14 /* MockRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

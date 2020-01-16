@@ -26,14 +26,14 @@ final class MainGridViewModel: ViewModel {
     }
     
     // MARK: - Public functions
-    func getData(_ handler: (Error?) -> Void) {
-        repository.getPeople { (result) in
+    func getData(_ handler: @escaping (Error?) -> Void) {
+        repository.getPeople(page: 1) { (result) in
             switch result {
             case .failure(let error):
                 handler(error)
             case .success(let people):
                 self.people = people
-                peopleViewModels = people.map { MainGridCellViewModel.from($0) }
+                self.peopleViewModels = people.map { MainGridCellViewModel.from($0) }
                 handler(nil)
             }
         }

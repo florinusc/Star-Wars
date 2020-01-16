@@ -8,17 +8,17 @@
 
 import Foundation
 
-enum RequestType {
+public enum RequestType {
     case people(page: Int)
     
     var url: URL? {
         var components = URLComponents()
-        components.scheme = "https"
-        components.host = "swapi.co/api"
+        components.scheme = "http"
+        components.host = "swapi.co"
         
         switch self {
         case .people(let page):
-            components.path = "/people"
+            components.path = "/api/people"
             components.queryItems = [URLQueryItem(name: "page", value: "\(page)")]
         }
         

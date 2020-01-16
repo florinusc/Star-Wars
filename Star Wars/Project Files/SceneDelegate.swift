@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let navigationController = UINavigationController(rootViewController: MainGridViewController.getInstance(with: MainGridViewModel(repository: MockRepository())))
+        let navigationController = UINavigationController(rootViewController: MainGridViewController.getInstance(with: MainGridViewModel(repository: OnlineRepository())))
         navigationController.navigationBar.tintColor = .systemOrange
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

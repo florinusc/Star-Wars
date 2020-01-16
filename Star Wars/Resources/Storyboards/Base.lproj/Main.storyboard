@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JaZ-Wn-FWW">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Fjr-cq-duj">
                                     <size key="itemSize" width="50" height="50"/>
@@ -34,7 +34,7 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JaZ-Wn-FWW" secondAttribute="trailing" id="CLn-vq-2YN"/>
                             <constraint firstItem="JaZ-Wn-FWW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RIT-sX-h9a"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JaZ-Wn-FWW" secondAttribute="bottom" id="Shu-l4-qDT"/>
+                            <constraint firstAttribute="bottom" secondItem="JaZ-Wn-FWW" secondAttribute="bottom" id="Shu-l4-qDT"/>
                             <constraint firstItem="JaZ-Wn-FWW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y2S-ED-0WZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -45,7 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="PgK-LI-zCT">

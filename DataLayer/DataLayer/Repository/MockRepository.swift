@@ -17,7 +17,7 @@ public final class MockRepository: Repository {
         self.shouldReturnError = shouldReturnError
     }
     
-    public func getPeople(completion handler: (Result<[Person], Error>) -> Void) {
+    public func getPeople(page: Int, completion handler: @escaping (Result<[Person], Error>) -> Void) {
         if shouldReturnError {
             handler(Result.failure(CustomError.general))
             return

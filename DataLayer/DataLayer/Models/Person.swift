@@ -17,4 +17,16 @@ public struct Person {
     public let eyeColor: String
     public let birthYear: String
     public let gender: String
+    
+    public static func from(_ resource: PersonResource) -> Person {
+        return Person(name: resource.name,
+                      height: Int(resource.height) ?? 0,
+                      mass: Int(resource.mass) ?? 0,
+                      hairColor: resource.hairColor,
+                      skinColor: resource.skinColor,
+                      eyeColor: resource.eyeColor,
+                      birthYear: resource.birthYear,
+                      gender: resource.gender)
+    }
+    
 }
