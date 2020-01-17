@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct PersonResource: Decodable {
+public struct PersonResource: Codable, Equatable {
 
     let name: String
     let height: String

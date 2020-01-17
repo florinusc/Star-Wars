@@ -11,6 +11,7 @@ import Foundation
 public enum CustomError: Error {
     case general
     case network
+    case noLocalData
 }
 
 extension CustomError: LocalizedError {
@@ -18,6 +19,7 @@ extension CustomError: LocalizedError {
         switch self {
         case .general: return NSLocalizedString("Something went wrong", comment: "General Error")
         case .network: return NSLocalizedString("There was a problem with the network", comment: "Network Error")
+        case .noLocalData: return NSLocalizedString("There is no local data", comment: "Data Error")
         }
     }
 }
