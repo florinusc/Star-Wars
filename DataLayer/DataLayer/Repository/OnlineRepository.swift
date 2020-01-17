@@ -15,14 +15,15 @@ public class OnlineRepository: Repository {
     
     public init() {}
     
-    public func getPeople(page: Int, completion handler: @escaping (Result<[Person], Error>) -> Void) {
+    public func getPeople(page: Int, completion handler: @escaping (Result<PeopleList, Error>) -> Void) {
         sessionManager.request(type: PeopleListResource.self, requestType: .people(page: page)) { (result) in
             switch result {
             case .failure(let error):
                 handler(Result.failure(error))
             case .success(let resource):
                 let people = resource.results.map { Person.from($0) }
-                handler(Result.success(people))
+                let peopleList = PeopleList(more: resource.next != nil, people: people)
+                handler(Result.success(peopleList))
             }
         }
     }

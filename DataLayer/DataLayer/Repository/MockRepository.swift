@@ -17,7 +17,7 @@ public final class MockRepository: Repository {
         self.shouldReturnError = shouldReturnError
     }
     
-    public func getPeople(page: Int, completion handler: @escaping (Result<[Person], Error>) -> Void) {
+    public func getPeople(page: Int, completion handler: @escaping (Result<PeopleList, Error>) -> Void) {
         if shouldReturnError {
             handler(Result.failure(CustomError.general))
             return
@@ -38,6 +38,6 @@ public final class MockRepository: Repository {
                              eyeColor: "black",
                              birthYear: "1112",
                              gender: "male")]
-        handler(Result.success(people))
+        handler(Result.success(PeopleList(more: false, people: people)))
     }
 }

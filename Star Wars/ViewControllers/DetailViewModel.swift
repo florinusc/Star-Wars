@@ -16,8 +16,8 @@ struct DetailViewModel: ViewModel {
     
     // MARK: - Public variables
     var name: String { return person.name }
-    var heightText: String { return "\(person.height) cm" }
-    var weightText: String { return "\(person.mass) kg"}
+    var heightText: String { return person.height == 0 ? "unknown" : "\(person.height) cm" }
+    var weightText: String { return person.mass == 0 ? "unknown" : "\(person.mass) kg" }
     var eyeColor: String { return person.eyeColor }
     var skinColor: String { return person.skinColor }
     var hairColor: String { return person.hairColor }

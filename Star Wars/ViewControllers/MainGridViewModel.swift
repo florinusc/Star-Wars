@@ -19,6 +19,8 @@ final class MainGridViewModel: ViewModel {
     
     // MARK: - Private variables
     private var people = [Person]()
+    private var currentPage = 1
+    private var more = true
     
     // MARK: - Lifecycle
     init(repository: Repository) {
@@ -26,15 +28,20 @@ final class MainGridViewModel: ViewModel {
     }
     
     // MARK: - Public functions
-    func getData(_ handler: @escaping (Error?) -> Void) {
-        repository.getPeople(page: 1) { (result) in
+    func getData(_ handler: @escaping (Result<[MainGridCellViewModel], Error>) -> Void) {
+        guard more else {
+            handler(Result.success([]))
+            return
+        }
+        repository.getPeople(page: currentPage) { (result) in
             switch result {
             case .failure(let error):
-                handler(error)
-            case .success(let people):
-                self.people = people
-                self.peopleViewModels = people.map { MainGridCellViewModel.from($0) }
-                handler(nil)
+                handler(Result.failure(error))
+            case .success(let peopleList):
+                self.currentPage += 1
+                self.more = peopleList.more
+                self.people.append(contentsOf: peopleList.people)
+                handler(Result.success(peopleList.people.map { MainGridCellViewModel.from($0) }))
             }
         }
     }

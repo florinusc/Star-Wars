@@ -10,7 +10,7 @@ import UIKit
 
 final class MainGridViewController: UIViewController, ViewModelBased {
     
-    private enum Section: CaseIterable {
+    private enum Section: Int, CaseIterable {
         case main
     }
     
@@ -27,6 +27,7 @@ final class MainGridViewController: UIViewController, ViewModelBased {
     
     // MARK: - Private variables
     private lazy var dataSource = makeDatasource()
+    private var isGettingData = false
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -53,16 +54,20 @@ final class MainGridViewController: UIViewController, ViewModelBased {
     }
     
     private func getData() {
+        guard isGettingData == false else { return }
+        isGettingData = true
         add(loadingViewController)
-        viewModel.getData { [weak self] (error) in
+        viewModel.getData { [weak self] (result) in
             guard let self = self else { return }
             DispatchQueue.main.async {
+                self.isGettingData = false
                 self.loadingViewController.remove()
-                if let error = error {
+                switch result {
+                case .failure(let error):
                     self.presentAlert(for: error)
-                    return
+                case .success(let viewModels):
+                    self.update(with: viewModels)
                 }
-                self.update(with: self.viewModel.peopleViewModels)
             }
         }
     }
@@ -76,8 +81,11 @@ final class MainGridViewController: UIViewController, ViewModelBased {
     }
     
     private func update(with cellViewModels: [MainGridCellViewModel]) {
-        var snapshot = NSDiffableDataSourceSnapshot<Section, MainGridCellViewModel>()
-        snapshot.appendSections(Section.allCases)
+        guard cellViewModels.count > 0 else { return }
+        var snapshot = dataSource.snapshot()
+        if snapshot.numberOfSections == 0 {
+            snapshot.appendSections(Section.allCases)
+        }
         snapshot.appendItems(cellViewModels, toSection: .main)
         dataSource.apply(snapshot, animatingDifferences: true)
     }
@@ -88,6 +96,12 @@ extension MainGridViewController: UICollectionViewDelegate {
         guard let detailViewModel = viewModel.detailViewModel(at: indexPath.row) else { return }
         let detailViewController = DetailViewController.getInstance(with: detailViewModel)
         navigationController?.pushViewController(detailViewController, animated: true)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.item == collectionView.numberOfItems(inSection: Section.main.rawValue) - 1 {
+            getData()
+        }
     }
 }
 
