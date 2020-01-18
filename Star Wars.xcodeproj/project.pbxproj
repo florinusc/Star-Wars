@@ -169,10 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				9F6D5E0E23CE1A050084D4AE /* Info.plist */,
-				9F89066923D2EC6A009D239F /* MainGridViewModelTests.swift */,
-				9F89066B23D2EF7E009D239F /* DetailViewModelTests.swift */,
-				9F89066F23D320EB009D239F /* MainGridViewControllerTests.swift */,
-				9F89067123D32F3E009D239F /* DetailViewControllerTests.swift */,
+				9F89067323D3307F009D239F /* ViewControllers */,
 			);
 			path = "Star WarsTests";
 			sourceTree = "<group>";
@@ -242,6 +239,17 @@
 				9F6D5E2D23CEDCB80084D4AE /* Storyboarded.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9F89067323D3307F009D239F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F89066923D2EC6A009D239F /* MainGridViewModelTests.swift */,
+				9F89066B23D2EF7E009D239F /* DetailViewModelTests.swift */,
+				9F89066F23D320EB009D239F /* MainGridViewControllerTests.swift */,
+				9F89067123D32F3E009D239F /* DetailViewControllerTests.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		9FA7D6CF23CF232100D73F14 /* Cells */ = {
