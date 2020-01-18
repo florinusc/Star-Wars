@@ -33,7 +33,7 @@ class MainGridViewModelTests: XCTestCase {
         makeSUT(true).getData { (result) in
             switch result {
             case .failure(let error): testableError = error
-            case .success: return
+            case .success: XCTFail("Should return error")
             }
         }
         XCTAssertNotNil(testableError)

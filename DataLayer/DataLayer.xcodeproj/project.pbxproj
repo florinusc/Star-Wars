@@ -16,8 +16,8 @@
 		9F89064B23D0EEBB009D239F /* PeopleListResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89064A23D0EEBB009D239F /* PeopleListResource.swift */; };
 		9F89064D23D0F844009D239F /* PeopleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89064C23D0F844009D239F /* PeopleList.swift */; };
 		9F89065023D1A9D7009D239F /* PersistanceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89064F23D1A9D7009D239F /* PersistanceHelper.swift */; };
+		9F89067523D347BA009D239F /* MockRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89067423D347BA009D239F /* MockRepositoryTests.swift */; };
 		9FA7D80C23D0B06E00D73F14 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA7D80223D0B06E00D73F14 /* DataLayer.framework */; };
-		9FA7D81123D0B06E00D73F14 /* DataLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D81023D0B06E00D73F14 /* DataLayerTests.swift */; };
 		9FA7D81323D0B06E00D73F14 /* DataLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FA7D80523D0B06E00D73F14 /* DataLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FA7D83023D0B0BA00D73F14 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D82C23D0B0BA00D73F14 /* Repository.swift */; };
 		9FA7D83123D0B0BA00D73F14 /* MockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D82D23D0B0BA00D73F14 /* MockRepository.swift */; };
@@ -57,11 +57,11 @@
 		9F89064A23D0EEBB009D239F /* PeopleListResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListResource.swift; sourceTree = "<group>"; };
 		9F89064C23D0F844009D239F /* PeopleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleList.swift; sourceTree = "<group>"; };
 		9F89064F23D1A9D7009D239F /* PersistanceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceHelper.swift; sourceTree = "<group>"; };
+		9F89067423D347BA009D239F /* MockRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepositoryTests.swift; sourceTree = "<group>"; };
 		9FA7D80223D0B06E00D73F14 /* DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA7D80523D0B06E00D73F14 /* DataLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataLayer.h; sourceTree = "<group>"; };
 		9FA7D80623D0B06E00D73F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FA7D80B23D0B06E00D73F14 /* DataLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FA7D81023D0B06E00D73F14 /* DataLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayerTests.swift; sourceTree = "<group>"; };
 		9FA7D81223D0B06E00D73F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FA7D82C23D0B0BA00D73F14 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		9FA7D82D23D0B0BA00D73F14 /* MockRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockRepository.swift; sourceTree = "<group>"; };
@@ -149,8 +149,8 @@
 		9FA7D80F23D0B06E00D73F14 /* DataLayerTests */ = {
 			isa = PBXGroup;
 			children = (
-				9FA7D81023D0B06E00D73F14 /* DataLayerTests.swift */,
 				9FA7D81223D0B06E00D73F14 /* Info.plist */,
+				9F89067423D347BA009D239F /* MockRepositoryTests.swift */,
 			);
 			path = DataLayerTests;
 			sourceTree = "<group>";
@@ -309,7 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FA7D81123D0B06E00D73F14 /* DataLayerTests.swift in Sources */,
+				9F89067523D347BA009D239F /* MockRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
