@@ -8,10 +8,10 @@
 
 import UIKit
 
-class MainGridCell: UICollectionViewCell {
+final class MainGridCell: UICollectionViewCell {
     
     // MARK: - IBOutlets
-    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private(set) weak var nameLabel: UILabel!
     
     // MARK: - Public variables
     var viewModel: MainGridCellViewModel! {

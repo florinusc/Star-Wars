@@ -10,12 +10,8 @@ import UIKit
 
 final class MainGridViewController: UIViewController, ViewModelBased {
     
-    private enum Section: Int, CaseIterable {
-        case main
-    }
-    
     // MARK: - IBOutlets
-    @IBOutlet private weak var collectionView: UICollectionView!
+    @IBOutlet private(set) weak var collectionView: UICollectionView!
     
     // MARK: - Private constants
     private let padding: CGFloat = 10.0
@@ -30,8 +26,8 @@ final class MainGridViewController: UIViewController, ViewModelBased {
     private var isGettingData = false
     
     // MARK: - Lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func loadView() {
+        super.loadView()
         setup()
     }
     
@@ -72,7 +68,7 @@ final class MainGridViewController: UIViewController, ViewModelBased {
         }
     }
     
-    private func makeDatasource() -> UICollectionViewDiffableDataSource<Section, MainGridCellViewModel> {
+    private func makeDatasource() -> UICollectionViewDiffableDataSource<Int, MainGridCellViewModel> {
         return UICollectionViewDiffableDataSource(collectionView: collectionView) { (collectionView, indexPath, cellViewModel) -> UICollectionViewCell? in
             let cell: MainGridCell = collectionView.dequeueReusableCell(for: indexPath)
             cell.viewModel = cellViewModel
@@ -84,9 +80,9 @@ final class MainGridViewController: UIViewController, ViewModelBased {
         guard cellViewModels.count > 0 else { return }
         var snapshot = dataSource.snapshot()
         if snapshot.numberOfSections == 0 {
-            snapshot.appendSections(Section.allCases)
+            snapshot.appendSections([0])
         }
-        snapshot.appendItems(cellViewModels, toSection: .main)
+        snapshot.appendItems(cellViewModels, toSection: 0)
         dataSource.apply(snapshot, animatingDifferences: true)
     }
 }
@@ -99,7 +95,7 @@ extension MainGridViewController: UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if indexPath.item == collectionView.numberOfItems(inSection: Section.main.rawValue) - 1 {
+        if indexPath.item == collectionView.numberOfItems(inSection: 0) - 1 {
             getData()
         }
     }
