@@ -30,3 +30,27 @@ public struct Person {
     }
     
 }
+
+extension Person {
+    public static func makeLukeMock() -> Person {
+        return Person(name: "Luke",
+                      height: 177,
+                      mass: 200,
+                      hairColor: "brown",
+                      skinColor: "fair",
+                      eyeColor: "green",
+                      birthYear: "19BBY",
+                      gender: "male")
+    }
+    
+    public static func makeYodaMock() -> Person {
+        return Person(name: "Yoda",
+                      height: 98,
+                      mass: 54,
+                      hairColor: "n/a",
+                      skinColor: "green",
+                      eyeColor: "black",
+                      birthYear: "1112",
+                      gender: "male")
+    }
+}

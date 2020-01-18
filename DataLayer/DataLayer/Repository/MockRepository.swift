@@ -22,22 +22,7 @@ public final class MockRepository: Repository {
             handler(Result.failure(CustomError.general))
             return
         }
-        let people = [Person(name: "Luke",
-                             height: 177,
-                             mass: 200,
-                             hairColor: "brown",
-                             skinColor: "fair",
-                             eyeColor: "green",
-                             birthYear: "19BBY",
-                             gender: "male"),
-                      Person(name: "Yoda",
-                             height: 98,
-                             mass: 54,
-                             hairColor: "n/a",
-                             skinColor: "green",
-                             eyeColor: "black",
-                             birthYear: "1112",
-                             gender: "male")]
+        let people: [Person] = [.makeLukeMock(), .makeYodaMock()]
         handler(Result.success(PeopleList(more: false, people: people)))
     }
 }
