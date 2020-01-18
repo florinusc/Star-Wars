@@ -29,14 +29,19 @@ public class OnlineRepository: Repository {
     
     public func getPeople(page: Int, completion handler: @escaping (Result<PeopleList, Error>) -> Void) {
         checkInternetConnection { [weak self] (online) in
+            guard let self = self else { return }
             guard online else {
-                let resources = (try? self?.persistanceHelper.getPeopleFromDisk()) ?? []
-                let people = resources.map { Person.from($0) }
-                let peopleList = PeopleList(more: false, people: people)
-                handler(Result.success(peopleList))
+                do {
+                    let resources = try self.persistanceHelper.getPeopleFromDisk()
+                    let people = resources.map { Person.from($0) }
+                    let peopleList = PeopleList(more: false, people: people)
+                    handler(Result.success(peopleList))
+                } catch let error {
+                    handler(Result.failure(error))
+                }
                 return
             }
-            self?.sessionManager.request(type: PeopleListResource.self, requestType: .people(page: page)) { [weak self] (result) in
+            self.sessionManager.request(type: PeopleListResource.self, requestType: .people(page: page)) { [weak self] (result) in
                 guard let self = self else { return }
                 switch result {
                 case .failure(let error):
