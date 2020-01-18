@@ -13,7 +13,6 @@
 		9F6D5DFD23CE1A030084D4AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6D5DFB23CE1A030084D4AE /* Main.storyboard */; };
 		9F6D5DFF23CE1A040084D4AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6D5DFE23CE1A040084D4AE /* Assets.xcassets */; };
 		9F6D5E0223CE1A040084D4AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6D5E0023CE1A040084D4AE /* LaunchScreen.storyboard */; };
-		9F6D5E0D23CE1A050084D4AE /* Star_WarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D5E0C23CE1A050084D4AE /* Star_WarsTests.swift */; };
 		9F6D5E1823CE1A050084D4AE /* Star_WarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D5E1723CE1A050084D4AE /* Star_WarsUITests.swift */; };
 		9F6D5E2C23CEDCAE0084D4AE /* ViewModelBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D5E2B23CEDCAE0084D4AE /* ViewModelBased.swift */; };
 		9F6D5E2E23CEDCB80084D4AE /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D5E2D23CEDCB80084D4AE /* Storyboarded.swift */; };
@@ -24,6 +23,7 @@
 		9F89066623D2E959009D239F /* DataLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F89066123D2E959009D239F /* DataLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F89066723D2E959009D239F /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F89066223D2E959009D239F /* NetworkLayer.framework */; };
 		9F89066823D2E959009D239F /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F89066223D2E959009D239F /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F89066A23D2EC6A009D239F /* MainGridViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89066923D2EC6A009D239F /* MainGridViewModelTests.swift */; };
 		9FA7D6CD23CF231B00D73F14 /* MainGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D6CB23CF231B00D73F14 /* MainGridCell.swift */; };
 		9FA7D6CE23CF231B00D73F14 /* MainGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA7D6CC23CF231B00D73F14 /* MainGridCell.xib */; };
 		9FA7D6D123CF233500D73F14 /* MainGridCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D6D023CF233500D73F14 /* MainGridCellViewModel.swift */; };
@@ -77,7 +77,6 @@
 		9F6D5E0123CE1A040084D4AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F6D5E0323CE1A040084D4AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F6D5E0823CE1A050084D4AE /* Star WarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Star WarsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F6D5E0C23CE1A050084D4AE /* Star_WarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star_WarsTests.swift; sourceTree = "<group>"; };
 		9F6D5E0E23CE1A050084D4AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F6D5E1323CE1A050084D4AE /* Star WarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Star WarsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6D5E1723CE1A050084D4AE /* Star_WarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star_WarsUITests.swift; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 		9F89066023D2E959009D239F /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F89066123D2E959009D239F /* DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F89066223D2E959009D239F /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F89066923D2EC6A009D239F /* MainGridViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridViewModelTests.swift; sourceTree = "<group>"; };
 		9FA7D6CB23CF231B00D73F14 /* MainGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridCell.swift; sourceTree = "<group>"; };
 		9FA7D6CC23CF231B00D73F14 /* MainGridCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainGridCell.xib; sourceTree = "<group>"; };
 		9FA7D6D023CF233500D73F14 /* MainGridCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridCellViewModel.swift; sourceTree = "<group>"; };
@@ -162,8 +162,8 @@
 		9F6D5E0B23CE1A050084D4AE /* Star WarsTests */ = {
 			isa = PBXGroup;
 			children = (
-				9F6D5E0C23CE1A050084D4AE /* Star_WarsTests.swift */,
 				9F6D5E0E23CE1A050084D4AE /* Info.plist */,
+				9F89066923D2EC6A009D239F /* MainGridViewModelTests.swift */,
 			);
 			path = "Star WarsTests";
 			sourceTree = "<group>";
@@ -336,6 +336,7 @@
 					};
 					9F6D5E0723CE1A050084D4AE = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 						TestTargetID = 9F6D5DF123CE1A030084D4AE;
 					};
 					9F6D5E1223CE1A050084D4AE = {
@@ -417,7 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F6D5E0D23CE1A050084D4AE /* Star_WarsTests.swift in Sources */,
+				9F89066A23D2EC6A009D239F /* MainGridViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +620,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
 				INFOPLIST_FILE = "Star WarsTests/Info.plist";
@@ -630,6 +632,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "approcket.Star-WarsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Star Wars.app/Star Wars";
@@ -641,6 +644,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
 				INFOPLIST_FILE = "Star WarsTests/Info.plist";
