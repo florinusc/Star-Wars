@@ -26,6 +26,7 @@
 		9F89066A23D2EC6A009D239F /* MainGridViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89066923D2EC6A009D239F /* MainGridViewModelTests.swift */; };
 		9F89066C23D2EF7E009D239F /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89066B23D2EF7E009D239F /* DetailViewModelTests.swift */; };
 		9F89067023D320EB009D239F /* MainGridViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89066F23D320EB009D239F /* MainGridViewControllerTests.swift */; };
+		9F89067223D32F3E009D239F /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89067123D32F3E009D239F /* DetailViewControllerTests.swift */; };
 		9FA7D6CD23CF231B00D73F14 /* MainGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D6CB23CF231B00D73F14 /* MainGridCell.swift */; };
 		9FA7D6CE23CF231B00D73F14 /* MainGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA7D6CC23CF231B00D73F14 /* MainGridCell.xib */; };
 		9FA7D6D123CF233500D73F14 /* MainGridCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA7D6D023CF233500D73F14 /* MainGridCellViewModel.swift */; };
@@ -92,6 +93,7 @@
 		9F89066923D2EC6A009D239F /* MainGridViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridViewModelTests.swift; sourceTree = "<group>"; };
 		9F89066B23D2EF7E009D239F /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
 		9F89066F23D320EB009D239F /* MainGridViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridViewControllerTests.swift; sourceTree = "<group>"; };
+		9F89067123D32F3E009D239F /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
 		9FA7D6CB23CF231B00D73F14 /* MainGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridCell.swift; sourceTree = "<group>"; };
 		9FA7D6CC23CF231B00D73F14 /* MainGridCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainGridCell.xib; sourceTree = "<group>"; };
 		9FA7D6D023CF233500D73F14 /* MainGridCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridCellViewModel.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				9F89066923D2EC6A009D239F /* MainGridViewModelTests.swift */,
 				9F89066B23D2EF7E009D239F /* DetailViewModelTests.swift */,
 				9F89066F23D320EB009D239F /* MainGridViewControllerTests.swift */,
+				9F89067123D32F3E009D239F /* DetailViewControllerTests.swift */,
 			);
 			path = "Star WarsTests";
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				9F89066A23D2EC6A009D239F /* MainGridViewModelTests.swift in Sources */,
 				9F89067023D320EB009D239F /* MainGridViewControllerTests.swift in Sources */,
 				9F89066C23D2EF7E009D239F /* DetailViewModelTests.swift in Sources */,
+				9F89067223D32F3E009D239F /* DetailViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
