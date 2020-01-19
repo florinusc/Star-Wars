@@ -31,6 +31,7 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="mainGrid"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JaZ-Wn-FWW" secondAttribute="trailing" id="CLn-vq-2YN"/>
                             <constraint firstItem="JaZ-Wn-FWW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RIT-sX-h9a"/>

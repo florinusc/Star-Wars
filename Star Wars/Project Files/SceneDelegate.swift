@@ -14,10 +14,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        var repository: Repository {
+            if CommandLine.arguments.contains("--uitesting") {
+                return MockRepository()
+            }
+            return OnlineRepository()
+        }
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let navigationController = UINavigationController(rootViewController: MainGridViewController.getInstance(with: MainGridViewModel(repository: OnlineRepository())))
+        let navigationController = UINavigationController(rootViewController: MainGridViewController.getInstance(with: MainGridViewModel(repository: repository)))
         navigationController.navigationBar.tintColor = .systemOrange
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
