@@ -33,6 +33,18 @@ class PersistanceHelperTests: XCTestCase {
         }
     }
     
+    func test_tryToSaveTheSameEntriesTwice_savesThemOnlyOnce() {
+        let resourcesToSave: [PersonResource] = [.makeLukeMock(), .makeYodaMock()]
+        do {
+            try PersistanceHelper().savePeopleToDisk(people: resourcesToSave)
+            try PersistanceHelper().savePeopleToDisk(people: resourcesToSave)
+            let retrievedResources = try PersistanceHelper().getPeopleFromDisk()
+            XCTAssertEqual(retrievedResources, resourcesToSave)
+        } catch {
+            XCTFail("Could not access disk")
+        }
+    }
+    
     // MARK: - Private functions
     private func clearFiles() {
         let fileManager = FileManager.default
