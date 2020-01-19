@@ -14,12 +14,11 @@ final class PersistanceHelper {
     private let fileManager = FileManager()
     private let filename = "people.json"
     
-    private var url: URL { getDocumentsDirectory().appendingPathComponent(filename) }
+    private var url: URL { getCachesDirectory().appendingPathComponent(filename) }
     
-    private func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let documentsDirectory = paths[0]
-        return documentsDirectory
+    private func getCachesDirectory() -> URL {
+        let paths = fileManager.urls(for: .cachesDirectory, in: .userDomainMask)
+        return paths[0]
     }
 
     func savePeopleToDisk(people: [PersonResource]) throws {
@@ -42,9 +41,6 @@ final class PersistanceHelper {
     }
 
     func getPeopleFromDisk() throws -> [PersonResource] {
-        if !fileManager.fileExists(atPath: url.path) {
-            throw CustomError.noLocalData
-        }
         if let data = fileManager.contents(atPath: url.path) {
             let decoder = JSONDecoder()
             let posts = try decoder.decode([PersonResource].self, from: data)

@@ -28,3 +28,28 @@ public struct PersonResource: Codable, Equatable {
     }
     
 }
+
+extension PersonResource {
+    public static func makeLukeMock() -> PersonResource {
+        return PersonResource(name: "Luke",
+                              height: "177",
+                              mass: "200",
+                              hairColor: "brown",
+                              skinColor: "fair",
+                              eyeColor: "green",
+                              birthYear: "19BBY",
+                              gender: "male")
+    }
+    
+    public static func makeYodaMock() -> PersonResource {
+        return PersonResource(name: "Yoda",
+                              height: "98",
+                              mass: "54",
+                              hairColor: "n/a",
+                              skinColor: "green",
+                              eyeColor: "black",
+                              birthYear: "1112",
+                              gender: "male")
+    }
+}
+
