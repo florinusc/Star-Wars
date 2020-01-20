@@ -9,7 +9,7 @@
 import Foundation
 import Common
 
-public class SessionManager {
+public final class SessionManager {
     
     public init() {}
     

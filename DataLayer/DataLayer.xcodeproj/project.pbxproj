@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F61390B23D5D21100783A2A /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F61390A23D5D21100783A2A /* PersonTests.swift */; };
 		9F89063423D0D36A009D239F /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F89063323D0D36A009D239F /* Common.framework */; };
 		9F89063523D0D36A009D239F /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F89063323D0D36A009D239F /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F89063D23D0D4AA009D239F /* OnlineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89063C23D0D4AA009D239F /* OnlineRepository.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9F61390A23D5D21100783A2A /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		9F89063323D0D36A009D239F /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F89063C23D0D4AA009D239F /* OnlineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineRepository.swift; sourceTree = "<group>"; };
 		9F89064423D0D4BF009D239F /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +93,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F61390C23D5D2F600783A2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F61390A23D5D21100783A2A /* PersonTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9F61390D23D5D30000783A2A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9F89067423D347BA009D239F /* MockRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9F61390E23D5D31400783A2A /* Local Data */ = {
+			isa = PBXGroup;
+			children = (
+				9F89067623D34AD4009D239F /* PersistanceHelperTests.swift */,
+			);
+			path = "Local Data";
+			sourceTree = "<group>";
+		};
 		9F89063223D0D36A009D239F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,8 +178,9 @@
 			isa = PBXGroup;
 			children = (
 				9FA7D81223D0B06E00D73F14 /* Info.plist */,
-				9F89067423D347BA009D239F /* MockRepositoryTests.swift */,
-				9F89067623D34AD4009D239F /* PersistanceHelperTests.swift */,
+				9F61390D23D5D30000783A2A /* Repository */,
+				9F61390E23D5D31400783A2A /* Local Data */,
+				9F61390C23D5D2F600783A2A /* Models */,
 			);
 			path = DataLayerTests;
 			sourceTree = "<group>";
@@ -313,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F89067523D347BA009D239F /* MockRepositoryTests.swift in Sources */,
+				9F61390B23D5D21100783A2A /* PersonTests.swift in Sources */,
 				9F89067723D34AD4009D239F /* PersistanceHelperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

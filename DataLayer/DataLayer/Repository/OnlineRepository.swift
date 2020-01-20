@@ -10,7 +10,7 @@ import Foundation
 import NetworkLayer
 import Network
 
-public class OnlineRepository: Repository {
+public final class OnlineRepository: Repository {
     
     private let sessionManager = SessionManager()
     private let persistanceHelper = PersistanceHelper()
