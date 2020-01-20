@@ -25,27 +25,6 @@ class MainGridViewControllerTests: XCTestCase {
         XCTAssertNotNil(makeSUT().collectionView.dataSource)
     }
     
-    func test_collectionViewNumberOfCells_isCorrect() {
-        guard let diffableDataSource = makeSUT().collectionView.dataSource as? UICollectionViewDiffableDataSource<Int, MainGridCellViewModel> else {
-            XCTFail("Data source could not be fetched")
-            return
-        }
-        let numberOfItems = diffableDataSource.snapshot().numberOfItems
-        
-        XCTAssertEqual(numberOfItems, 2)
-    }
-    
-    func test_nameInCells_isCorrect() {
-        let viewController = makeSUT()
-        guard let diffableDataSource = viewController.collectionView.dataSource as? UICollectionViewDiffableDataSource<Int, MainGridCellViewModel> else {
-            XCTFail("Data source could not be fetched")
-            return
-        }
-        let cell = diffableDataSource.collectionView(viewController.collectionView, cellForItemAt: IndexPath(item: 1, section: 0)) as? MainGridCell
-        
-        XCTAssertEqual(cell?.nameLabel.text, "Yoda")
-    }
-    
     // MARK: - Private functions
     private func makeSUT() -> MainGridViewController {
         let mainGridViewController = MainGridViewController.getInstance(with: MainGridViewModel(repository: MockRepository()))
