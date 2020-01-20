@@ -16,29 +16,29 @@
                 <rect key="frame" x="0.0" y="0.0" width="258" height="237"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsa-H1-t0A">
-                        <rect key="frame" x="0.0" y="0.0" width="258" height="237"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsa-H1-t0A">
+                        <rect key="frame" x="10" y="10" width="238" height="217"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <nil key="highlightedColor"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="8"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
-                        </userDefinedRuntimeAttributes>
                     </label>
                 </subviews>
             </view>
+            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="fsa-H1-t0A" secondAttribute="trailing" id="3RX-5A-0Gp"/>
-                <constraint firstItem="fsa-H1-t0A" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Kje-Xa-SHt"/>
-                <constraint firstAttribute="bottom" secondItem="fsa-H1-t0A" secondAttribute="bottom" id="URu-0H-FNl"/>
-                <constraint firstItem="fsa-H1-t0A" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="w2p-b0-Djr"/>
+                <constraint firstAttribute="trailing" secondItem="fsa-H1-t0A" secondAttribute="trailing" constant="10" id="3RX-5A-0Gp"/>
+                <constraint firstItem="fsa-H1-t0A" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Kje-Xa-SHt"/>
+                <constraint firstAttribute="bottom" secondItem="fsa-H1-t0A" secondAttribute="bottom" constant="10" id="URu-0H-FNl"/>
+                <constraint firstItem="fsa-H1-t0A" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="w2p-b0-Djr"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="258" height="237"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="nameLabel" destination="fsa-H1-t0A" id="pbp-qn-orR"/>
             </connections>

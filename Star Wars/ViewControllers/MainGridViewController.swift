@@ -39,7 +39,7 @@ final class MainGridViewController: UIViewController, ViewModelBased {
     }
     
     private func setupNavigationBar() {
-        title = "Star Wars"
+        title = "Star Wars Characters"
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
     }
     

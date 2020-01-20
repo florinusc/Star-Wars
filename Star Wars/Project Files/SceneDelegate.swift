@@ -14,6 +14,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        configureWindow(scene)
+    }
+    
+    private func configureWindow(_ scene: UIScene) {
         var repository: Repository {
             if CommandLine.arguments.contains("--uitesting") {
                 return MockRepository()
